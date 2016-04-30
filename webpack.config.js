@@ -52,6 +52,10 @@ var config = module.exports = {
         test: /\.sass$/,
         loader: ExtractTextPlugin.extract('style', 'css!sass?indentedSyntax&includePaths[]=' + __dirname +  '/node_modules'),
       },
+      {
+        test: /\.elm$/,
+        loader: 'elm-webpack',
+      }
     ],
   },
 
